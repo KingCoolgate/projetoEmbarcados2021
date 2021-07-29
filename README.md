@@ -13,8 +13,11 @@ Se você fez o git clone desse repositório para fazê-lo funcionar deve-se faze
 ~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ sudo make install //Para adicionar a função cocomm ao Terminal
 ~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ cd ..
 ~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/ make
-~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/ rm *.persist // Para adicionar a função canopend ao Terminal
+~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/ sudo make install // Para adicionar a função canopend ao Terminal
 ```
+Agora pode criar nós da rede can usando canopend
+
+<i>"[...] By default device uses Object Dictionary from `CANopenNode/example`, which contains only communication parameters." ~ projetoEmbarcados2021/CANopenDemo/CANopenLinux/README.md</i>
 
 # Comandos para fazer os testes com o CAN
 
@@ -85,7 +88,7 @@ Nos tutoriais explicam certinho e passo a passo, o que é cada função, como us
 Interno a esse repositório existe diversos outros que são base, como o CANopenLinux, por ser mais completo, é o que recomendo.
 https://github.com/CANopenNode/CANopenDemo
 
-> READ.me bem simplificado de tutorial para ver se a instalação tá ok <br>
+> README.md bem simplificado de tutorial para ver se a instalação tá ok <br>
 https://github.com/CANopenNode/CANopenDemo/blob/master/tutorial/README.md
 
 > Após brincar um pouco faça o teste global das ferramentas <br>
