@@ -1,8 +1,26 @@
 # Projeto acionamento de Motor e coleta de dados de enconder via barramento CAN e EPOS
 
+O projeto se encontra na pasta /prjMotorEncoder , para fazer com que os códigos de lá funcionem é necessário a instalação do CANopen, maneira mais fácil é seguir o tutorial do primeiro LINK da região de 'Comandos para fazer teste'.
+
+Se você fez o git clone desse repositório para fazê-lo funcionar deve-se fazer antes os seguintes commandos
+```sh
+~$ cd projetoEmbarcados2021
+~/projetoEmbarcados2021/ git init
+~/projetoEmbarcados2021/ git pull
+~/projetoEmbarcados2021/ git submodule update --init --recursive
+~/projetoEmbarcados2021/ cd CANopenDemo/CANopenLinux/cocomm
+~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ make
+~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ sudo make install //Para adicionar a função cocomm ao Terminal
+~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ cd ..
+~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/ make
+~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/ rm *.persist // Para adicionar a função canopend ao Terminal
+```
+
+# Comandos para fazer os testes com o CAN
+
 Antes de usar a comunicação com a EPOS precisa instalar algumas ferramentas
 
-Segue ess tutorial para instalar CANopen
+Segue esse tutorial para instalar CANopen
 https://opensource.lely.com/canopen/docs/installation/
 
 ```sh
@@ -23,7 +41,7 @@ Agora é "buildar" e rodar em no mínimo 4 terminais distintos
 ```sh
 # Adicionar a função que vai fazer a comunicação
 ~$ cd CANopenDemo/CANopenLinux/cocomm/
-~CANopenDemo/CANopenLinux/cocomm/$ make 
+~CANopenDemo/CANopenLinux/cocomm/$ make
 ~CANopenDemo/CANopenLinux/cocomm/$ sudo make install
 ~CANopenDemo/CANopenLinux/cocomm/$ cd
 # Inicializar o barramento virtual can0 (para teste)
