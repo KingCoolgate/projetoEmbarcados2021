@@ -2,10 +2,6 @@
 
 Antes de usar a comunicação com a EPOS precisa instalar algumas ferramentas
 
-```sh
-~$ sudo apt-get update
-~$ sudo apt-get upgrade
-```
 Segue ess tutorial para instalar CANopen
 https://opensource.lely.com/canopen/docs/installation/
 
@@ -85,48 +81,3 @@ https://github.com/CANopenNode/CANopenDemo/blob/master/tutorial/SDO.md
 
 > Teste de comunicação entre nós e master PDO <br>
 https://github.com/CANopenNode/CANopenDemo/blob/master/tutorial/PDO.md
-
-# ###############################################################################################################################################################
-
-# GUI para IHM
-
-Foi o primeiros teste de criação de uma Interface Humano Máquina, usando Gnu ToolKit, os tutorias em que aprendi a usar se encontram no link https://developer.gnome.org/gtk3/stable/gtk-getting-started.html
-
-# Links possivelmente úteis
-
-> Tutoriais Toradex <br>
-https://developer.toradex.com/getting-started/module-3-hardware-peripherals/basic-gpio-usage-iris-carrier-board-colibri-vfxx?som=colibri-vf50&board=iris-carrier-board&os=linux&desktop=linux
-
-> Tutoriais GTK <br>
-https://developer.gnome.org/gtk3/stable/gtk-getting-started.html
-https://developer.gnome.org/gtk4/stable/gtk-getting-started.html
-
->git oficial de GTK <br>
-https://gnome.pages.gitlab.gnome.org/gtk/gtk4/
-
-> Manuais <br>
-https://developer.gnome.org/references
-https://developer.gnome.org/gtk4/stable/
-https://developer.gnome.org/gtk3/stable/
-
-> Resumo <br>
-https://developer.gnome.org/platform-overview/unstable/tech-gtk.html.en
-
-Instalação do GTK
-Vai se necessário o uso do ninja e do meson
-```sh
-~$ sudo apt-get install python3 python3-pip python3-setuptools python3-wheel ninja-build
-~$ sudo su
-# pip3 install meson
-```
-
-Faça download dos arquivos
-```sh
-~$ git clone https://gitlab.gnome.org/GNOME/gtk.git
-~$ cd gtk/
-~$ meson setup --prefix /opt/gtk builddir
-~$ cd builddir
-~$ ninja
-~$ sudo su
-# ninja install
-```
