@@ -1,3 +1,3 @@
 #!/bin/sh
 
-demoLinuxDevice can0 -i 2
+demoLinuxDevice can0 -i 3
