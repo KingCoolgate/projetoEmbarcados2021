@@ -26,10 +26,10 @@ Então para criar um nó para a rede CAN precisamos ajeitar os Object Dictionary
 <li>/CANopenDemo/CANopenPIC/CANopenNode/example/OD.c</li>
 </ul>
 
-Substitua esses 2 arquivos com o
-/CANopenDemo/demo/OC.c
+Altere nesses 2 arquivos os valores dos parâmetros de comunicação PDO (valores 1400(4) e 1800(4)) e os parâmetros de mapeamento PDO (valores 1600(4) e 1A00(4)). Se quiser uma explicação sobre esse valores se encontra no link abaixo.
+<b><i>https://github.com/CANopenNode/CANopenDemo/blob/master/demo/demoDevice.md</i></b>
 
-<i> Não precisa fazer via substituição, você pode alterar os valores que quiser, para quanto quiser, mas saiba o que está fazendo. Modificando OD.c permite mais liberdade sobre as capacidades dos nós</i>
+Modificando OD.c permite mais liberdade sobre as capacidades dos nós.
 
 Depois volte a pasta do CANopenLinux e faça ~$ make ~$ sudo make install
 Para que a função canopend possa abrir nós com comunicação aberta.
