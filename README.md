@@ -11,13 +11,17 @@ Se você fez o git clone desse repositório para fazê-lo funcionar deve-se faze
 ~/projetoEmbarcados2021/ cd CANopenDemo/CANopenLinux/cocomm
 ~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ make
 ~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ sudo make install //Para adicionar a função cocomm ao Terminal
-~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ cd ../../demo
+~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/ make
+~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/ sudo make install
+Para adicionar a função canopend ao Terminal
+~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ cd ../demo
 ~/projetoEmbarcados2021/CANopenDemo/demo/ nano Makefile
 # E vai adicionar as seguinte linhas no final do arquivos
 'install:
 	cp $(LINK_TARGET) /usr/bin/$(LINK_TARGET)'
 ~/projetoEmbarcados2021/CANopenDemo/demo/ make
 ~/projetoEmbarcados2021/CANopenDemo/demo/ sudo make install
+Para adicionar a função demoLinuxDevice ao Terminal.
 ```
 Agora pode criar nós da rede can usando demoLinuxDevice, de qualquer pasta via Terminal.
 
@@ -34,7 +38,11 @@ Modificando OD.c permite mais liberdade sobre as capacidades dos nós.
 
 obs2: Caso fizer 'git submodule update --init --recursive' terá que alterar os arquivos OD.c novamente
 
-##################################################################################################################
+<hr>
+
+
+
+<hr>
 # Comandos para fazer os testes com o CAN
 
 Antes de usar a comunicação com a EPOS precisa instalar algumas ferramentas

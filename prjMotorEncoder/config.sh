@@ -6,6 +6,8 @@ sudo ip link add dev can0 type vcan
 sudo ip link set up can0
 
 #Cria nós virtuais
-gnome-terminal -- /bin/bash /home/joao-ishida/embarcados2021/projeto/prjMotorEncoder/crtNd1.sh
+gnome-terminal -- /bin/bash /home/joao-ishida/projetoEmbarcados2021/prjMotorEncoder/master.sh
 
-gnome-terminal -- /bin/bash /home/joao-ishida/embarcados2021/projeto/prjMotorEncoder/crtNd2.sh
+gnome-terminal -- /bin/bash /home/joao-ishida/projetoEmbarcados2021/prjMotorEncoder/1slave.sh
+
+gnome-terminal -- /bin/bash /home/joao-ishida/projetoEmbarcados2021/prjMotorEncoder/2slave.sh
