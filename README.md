@@ -11,32 +11,30 @@ Se você fez o git clone desse repositório para fazê-lo funcionar deve-se faze
 ~/projetoEmbarcados2021/ cd CANopenDemo/CANopenLinux/cocomm
 ~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ make
 ~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ sudo make install //Para adicionar a função cocomm ao Terminal
-~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ cd ..
-~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/ make
-~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/ sudo make install // Para adicionar a função canopend ao Terminal
+~/projetoEmbarcados2021/CANopenDemo/CANopenLinux/cocomm/ cd ../../demo
+~/projetoEmbarcados2021/CANopenDemo/demo/ nano Makefile
+# E vai adicionar as seguinte linhas no final do arquivos
+'install:
+	cp $(LINK_TARGET) /usr/bin/$(LINK_TARGET)'
+~/projetoEmbarcados2021/CANopenDemo/demo/ make
+~/projetoEmbarcados2021/CANopenDemo/demo/ sudo make install
 ```
-Agora pode criar nós da rede can usando canopend
+Agora pode criar nós da rede can usando demoLinuxDevice, de qualquer pasta via Terminal.
 
 <i>"[...] By default device uses Object Dictionary from `CANopenNode/example`, which contains only communication parameters." ~ projetoEmbarcados2021/CANopenDemo/CANopenLinux/README.md</i>
 
-Então para criar um nó para a rede CAN precisamos ajeitar os Object Dictionary, OD, dessa forma iremos mudar alguns arquivos lista deles segue abaixo via endereços, usando a pasta projetoEmbarcados2021 como referência.
+Então para criar um nó para a rede CAN precisamos ajeitar os Object Dictionary, OD, dessa forma não será preciso mexer os aquivos que o texto acima indica (tentei mexer não consegui, apelei pro demo que funcionou), usando a pasta projetoEmbarcados2021 como referência.
 
-<ul>
-<li>/CANopenDemo/CANopenLinux/CANopenNode/example/OD.c</li>
-<li>/CANopenDemo/CANopenPIC/CANopenNode/example/OD.c</li>
-</ul>
+<i>/CANopenDemo/CANopenPIC/demo/OD.c</i>
 
-Altere nesses 2 arquivos os valores dos parâmetros de comunicação PDO (valores 1400(4) e 1800(4)) e os parâmetros de mapeamento PDO (valores 1600(4) e 1A00(4)). Se quiser uma explicação sobre esse valores se encontra no link abaixo.
+Altere nesse arquivo os valores dos parâmetros de comunicação PDO (valores 1400(4) e 1800(4)) e os parâmetros de mapeamento PDO (valores 1600(4) e 1A00(4)). Se quiser uma explicação sobre esse valores se encontra no link abaixo.
 <b><i>https://github.com/CANopenNode/CANopenDemo/blob/master/demo/demoDevice.md</i></b>
 
 Modificando OD.c permite mais liberdade sobre as capacidades dos nós.
 
-Depois volte a pasta do CANopenLinux e faça ~$ make ~$ sudo make install
-Para que a função canopend possa abrir nós com comunicação aberta.
-
-obs: É possível ao invés de mudar o arquivo OD.c passar os parâmetros desejados como argumentos, porém assim é mais simples para o script que criamos.
 obs2: Caso fizer 'git submodule update --init --recursive' terá que alterar os arquivos OD.c novamente
 
+##################################################################################################################
 # Comandos para fazer os testes com o CAN
 
 Antes de usar a comunicação com a EPOS precisa instalar algumas ferramentas
