@@ -19,6 +19,21 @@ Agora pode criar nós da rede can usando canopend
 
 <i>"[...] By default device uses Object Dictionary from `CANopenNode/example`, which contains only communication parameters." ~ projetoEmbarcados2021/CANopenDemo/CANopenLinux/README.md</i>
 
+Então para criar um nó para a rede CAN precisamos ajeitar os Object Dictionary, OD, dessa forma iremos mudar alguns arquivos lista deles segue abaixo via endereços, usando a pasta projetoEmbarcados2021 como referência.
+
+<ul>
+<li>/CANopenDemo/CANopenLinux/CANopenNode/example/OD.c</li>
+<li>/CANopenDemo/CANopenPIC/CANopenNode/example/OD.c</li>
+</ul>
+
+Substitua esses 2 arquivos com o
+/CANopenDemo/demo/OC.c
+
+<i> Não precisa fazer via substituição, você pode alterar os valores que quiser, para quanto quiser, mas saiba o que está fazendo. Modificando OD.c permite mais liberdade sobre as capacidades dos nós</i>
+
+Depois volte a pasta do CANopenLinux e faça ~$ make ~$ sudo make install
+Para que a função canopend possa abrir nós com comunicação aberta. (É possível ao invés de mudar o arquivo OD.c passar os parâmetros desejados como argumentos, porém assim é mais simples para o script que criamos.)
+
 # Comandos para fazer os testes com o CAN
 
 Antes de usar a comunicação com a EPOS precisa instalar algumas ferramentas
