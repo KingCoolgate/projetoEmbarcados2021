@@ -32,7 +32,10 @@ Substitua esses 2 arquivos com o
 <i> Não precisa fazer via substituição, você pode alterar os valores que quiser, para quanto quiser, mas saiba o que está fazendo. Modificando OD.c permite mais liberdade sobre as capacidades dos nós</i>
 
 Depois volte a pasta do CANopenLinux e faça ~$ make ~$ sudo make install
-Para que a função canopend possa abrir nós com comunicação aberta. (É possível ao invés de mudar o arquivo OD.c passar os parâmetros desejados como argumentos, porém assim é mais simples para o script que criamos.)
+Para que a função canopend possa abrir nós com comunicação aberta.
+
+obs: É possível ao invés de mudar o arquivo OD.c passar os parâmetros desejados como argumentos, porém assim é mais simples para o script que criamos.
+obs2: Caso fizer 'git submodule update --init --recursive' terá que alterar os arquivos OD.c novamente
 
 # Comandos para fazer os testes com o CAN
 
