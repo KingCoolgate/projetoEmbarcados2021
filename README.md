@@ -2,10 +2,6 @@
 
 Antes de usar a comunicação com a EPOS precisa instalar algumas ferramentas
 
-```sh
-~$ sudo apt-get update
-~$ sudo apt-get upgrade
-```
 Segue ess tutorial para instalar CANopen
 https://opensource.lely.com/canopen/docs/installation/
 
