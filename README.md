@@ -45,6 +45,13 @@ Agora abra o arquivo ~/linux-toradex/arch/arm/boot/dts/vf-colibri-eval-v3.dtsi n
 	<p> &can0 {<br>
        	status = "okay";<br>
 				};</p></li>
+<li>No terminal digitar
+```sh
+~$ cd linux-toradex
+~/linux-toradex/ make colibri_vf_defconfig
+
+```  
+</li>
 </ol>
 
 <hr>
@@ -77,7 +84,7 @@ Agora pode criar nós da rede can usando demoLinuxDevice, de qualquer pasta via 
 
 Então para criar um nó para a rede CAN precisamos ajeitar os Object Dictionary, OD, dessa forma não será preciso mexer os aquivos que o texto acima indica (tentei mexer não consegui, apelei pro demo que funcionou), usando a pasta projetoEmbarcados2021 como referência.
 
-<i>/CANopenDemo/CANopenPIC/demo/OD.c</i>
+<i>/CANopenDemo/demo/OD.c</i>
 
 Altere nesse arquivo os valores dos parâmetros de comunicação PDO (valores 1400(4) e 1800(4)) e os parâmetros de mapeamento PDO (valores 1600(4) e 1A00(4)). Se quiser uma explicação sobre esse valores se encontra no link abaixo.
 <b><i>https://github.com/CANopenNode/CANopenDemo/blob/master/demo/demoDevice.md</i></b>
