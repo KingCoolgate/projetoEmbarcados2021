@@ -194,8 +194,8 @@ https://github.com/CANopenNode/CANopenDemo/blob/master/tutorial/SDO.md
 > Teste de comunicação entre nós e master PDO <br>
 https://github.com/CANopenNode/CANopenDemo/blob/master/tutorial/PDO.md
 
-> Habilitando CAN na toradex Colibri VFxx
+> Habilitando CAN na toradex Colibri VFxx <br>
 https://developer.toradex.com/knowledge-base/can-linux#Kernel_Support_Colibri_VFxx
 
-> Fazendo Build do kernel e pegando os arquivos do git toradex.
+> Fazendo Build do kernel e pegando os arquivos do git toradex <br>
 https://developer.toradex.com/knowledge-base/build-u-boot-and-linux-kernel-from-source-code
