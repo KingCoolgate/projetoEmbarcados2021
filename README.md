@@ -46,11 +46,9 @@ Agora abra o arquivo ~/linux-toradex/arch/arm/boot/dts/vf-colibri-eval-v3.dtsi n
        	status = "okay";<br>
 				};</p></li>
 <li>No terminal digitar
-```sh
-~$ cd linux-toradex
+<p>~$ cd linux-toradex <br>
 ~/linux-toradex/ make colibri_vf_defconfig
-
-```  
+</p>
 </li>
 </ol>
 
