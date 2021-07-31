@@ -1,6 +1,6 @@
 # Projeto acionamento de Motor e coleta de dados de enconder via barramento CAN e EPOS
 
-O projeto se encontra na pasta /prjMotorEncoder , para fazer com que os códigos de lá funcionem é necessário a instalação do CANopen, maneira mais fácil é seguir o tutorial do primeiro LINK da região de 'Comandos para fazer teste'.
+O projeto encontra-se na pasta /prjMotorEncoder , para fazer com que os códigos de lá funcionem é necessário a instalação do CANopen, maneira mais fácil é seguir o tutorial do primeiro LINK da região de 'Comandos para fazer teste'.
 
 <hr>
 
