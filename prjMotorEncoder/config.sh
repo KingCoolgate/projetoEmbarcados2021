@@ -11,3 +11,5 @@ gnome-terminal -- /bin/bash /home/joao-ishida/projetoEmbarcados2021/prjMotorEnco
 gnome-terminal -- /bin/bash /home/joao-ishida/projetoEmbarcados2021/prjMotorEncoder/1slave.sh
 
 gnome-terminal -- /bin/bash /home/joao-ishida/projetoEmbarcados2021/prjMotorEncoder/2slave.sh
+
+gnome-terminal -- /bin/bash /home/joao-ishida/projetoEmbarcados2021/prjMotorEncoder/candumpLog.sh
