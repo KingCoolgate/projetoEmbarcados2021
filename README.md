@@ -96,14 +96,6 @@ obs2: o script config.sh usa de 3 nós, porque um deve ser inicializado pelo can
 
 <hr>
 
-A execução do Script config.sh vai criar o CAN Bus virtual e inicilizar 3 nós. De forma a permitir o uso do comando 'cocomm'
-
-Falta integrar o script aos códigos em C, que faram uso de threads para se comunicar entre os nós, por facilidade essas threads vão chamar scripts que usaram cocomm para enviar as mensagens e ler elas também.
-
-Somada a essas alterações que falta, faremos alteração no device-tree como explicado em vídeo pelo Henrique @griloHBG. Além de tentar implementar mudar o CANtx CANrx para o CAN-High CAN-low
-
-<hr>
-
 # Comandos para fazer os testes com o CAN
 
 Antes de usar a comunicação com a EPOS precisa instalar algumas ferramentas
