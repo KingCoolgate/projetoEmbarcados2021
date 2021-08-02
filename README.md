@@ -54,6 +54,7 @@ Agora abra o arquivo ~/linux-toradex/arch/arm/boot/dts/vf-colibri-eval-v3.dtsi n
 </ol>
 
 <hr>
+
 # Configurando o arquivos do CANopenNode para ao abrir o demoLinuxDevice os OD estarem configurados
 
 Se você fez o git clone desse repositório para fazê-lo funcionar deve-se fazer antes os seguintes commandos para acionar CANopenNode
@@ -94,9 +95,6 @@ Modificando OD.c permite mais liberdade sobre as capacidades dos nós.
 obs2: o script config.sh usa de 3 nós, porque um deve ser inicializado pelo canopend para podermos usar a função cocomm, já os outro 2 nós já estão com os OD configurados para a comunicação tanto SDO quanto PDO.</i>
 
 <hr>
-<hr>
-<hr>
-<hr>
 
 A execução do Script config.sh vai criar o CAN Bus virtual e inicilizar 3 nós. De forma a permitir o uso do comando 'cocomm'
 
@@ -105,7 +103,6 @@ Falta integrar o script aos códigos em C, que faram uso de threads para se comu
 Somada a essas alterações que falta, faremos alteração no device-tree como explicado em vídeo pelo Henrique @griloHBG. Além de tentar implementar mudar o CANtx CANrx para o CAN-High CAN-low
 
 <hr>
->>>>>>> f7f46a76abcd0b5a04d7ae51237c8157d07d2f64
 
 # Comandos para fazer os testes com o CAN
 
@@ -170,7 +167,6 @@ Agora é "buildar" e rodar em no mínimo 4 terminais distintos
 
 Nos tutoriais explicam certinho e passo a passo, o que é cada função, como usar, quais parametros, o que cada valor significa.
 
-<hr>
 <hr>
 
 # Links Possivelmente úteis
