@@ -4,11 +4,30 @@ O projeto encontra-se na pasta /prjMotorEncoder , para fazer com que os códigos
 
 <hr>
 
-A execução do Script config.sh vai criar o CAN Bus virtual e inicilizar 3 nós. De forma a permitir o uso do comando 'cocomm'
+O programa principal do projeto é progfinal.c, nele é incorporados os diversos códigos base que criamos para fazer os testes, assim como o uso de scripts (por serem mais simples) mesmo que mais lentos, para a execução final do programa.
 
-Falta integrar o script aos códigos em C, que faram uso de threads para se comunicar entre os nós, por facilidade essas threads vão chamar scripts que usaram cocomm para enviar as mensagens e ler elas também.
+O código se baseia em 4 principais etapas, seno elas:
+1- Inicializar os nós, com seus OD, para que possamos fazer a comunicação
+2- Inicializar as threads que farão a comunicação, ou seja, preparar as chamadas de funções e limpeza de memória.
+3- Manter a comunicação ativa, e fazer o controle do motor.
+4- Encerrar os scripts e processos abertos, assim como encerrar os nós criados.
 
-Somada a essas alterações que falta, faremos alteração no device-tree como explicado em vídeo pelo Henrique @griloHBG. Além de tentar implementar mudar o CANtx CANrx para o CAN-High CAN-low
+# Projeto ficou inacabado, faltando correção e adição funções
+
+> Adições
+<ul>
+<il> Código que lerá o log gerado pelo candump ao progfinal.c </il>
+<il> Código que converte o que é lido da CAN, para valores em graus/radianos </il>
+<il> Envio dos valores em Graus para Cálculo de controle </il>
+<il> Conversão dos valores de controle para protocolo CAN </il>
+<il> Configuração padrão dos valores a serem usados na funcão prtcl </il>
+</ul>
+
+> Correções
+<ul>
+<li> Código gerado pelo prtclCvt (protocol converter), acaba por dar "stack smashing detected" </li>
+<li> Script send.sh precisa chamar outro script para não finalizar o programa pois utilizam o mesmo terminal, podendo ser realizado assim como outros scripts em threads distintas</li>
+</ul>
 
 # Em caso de dúvidas entre em contato
 
