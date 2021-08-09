@@ -16,11 +16,11 @@ O código se baseia em 4 principais etapas, seno elas:
 
 > Adições
 <ul>
-<il> Código que lerá o log gerado pelo candump ao progfinal.c </il>
-<il> Código que converte o que é lido da CAN, para valores em graus/radianos </il>
-<il> Envio dos valores em Graus para Cálculo de controle </il>
-<il> Conversão dos valores de controle para protocolo CAN </il>
-<il> Configuração padrão dos valores a serem usados na funcão prtcl </il>
+<li> Código que lerá o log gerado pelo candump ao progfinal.c </li>
+<li> Código que converte o que é lido da CAN, para valores em graus/radianos </li>
+<li> Envio dos valores em Graus para Cálculo de controle </li>
+<li> Conversão dos valores de controle para protocolo CAN </li>
+<li> Configuração padrão dos valores a serem usados na funcão prtcl </li>
 </ul>
 
 > Correções
