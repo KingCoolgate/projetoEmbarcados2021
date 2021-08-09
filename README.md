@@ -7,10 +7,12 @@ O projeto encontra-se na pasta /prjMotorEncoder , para fazer com que os códigos
 O programa principal do projeto é progfinal.c, nele é incorporados os diversos códigos base que criamos para fazer os testes, assim como o uso de scripts (por serem mais simples) mesmo que mais lentos, para a execução final do programa.
 
 O código se baseia em 4 principais etapas, seno elas:
-1- Inicializar os nós, com seus OD, para que possamos fazer a comunicação
-2- Inicializar as threads que farão a comunicação, ou seja, preparar as chamadas de funções e limpeza de memória.
-3- Manter a comunicação ativa, e fazer o controle do motor.
-4- Encerrar os scripts e processos abertos, assim como encerrar os nós criados.
+<ol>
+<li> Inicializar os nós, com seus OD, para que possamos fazer a comunicação.</li>
+<li> Inicializar as threads que farão a comunicação, ou seja, preparar as chamadas de funções e limpeza de memória.</li>
+<li> Manter a comunicação ativa, e fazer o controle do motor.</li>
+<li> Encerrar os scripts e processos abertos, assim como encerrar os nós criados.</li>
+</ol>
 
 # Projeto ficou inacabado, faltando correção e adição funções
 
