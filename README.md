@@ -6,7 +6,7 @@ O projeto encontra-se na pasta /prjMotorEncoder , para fazer com que os códigos
 
 O programa principal do projeto é progfinal.c, nele é incorporados os diversos códigos base que criamos para fazer os testes, assim como o uso de scripts (por serem mais simples) mesmo que mais lentos, para a execução final do programa.
 
-O código se baseia em 4 principais etapas, seno elas:
+O código se baseia em 4 principais etapas, sendo elas:
 <ol>
 <li> Inicializar os nós, com seus OD, para que possamos fazer a comunicação.</li>
 <li> Inicializar as threads que farão a comunicação, ou seja, preparar as chamadas de funções e limpeza de memória.</li>
