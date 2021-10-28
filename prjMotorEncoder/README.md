@@ -1,5 +1,17 @@
 # Explicando cada um dos arquivos
 
+> Funções ainda não implementadas
+
+<hr>
+-> IDE para seleção de inputs (rd/wr,nó,id,subid,valor);
+-> Após a leitura do Log fazer a desconversão do protocolo e utilizar para algum controle 
+
+> Funções ainda não implementadas no progfinal.c
+
+<hr>
+-> Leitura do candumpLog
+-> Uso dos scripts send, pois ainda só é usado no prog test prtclCvt.c
+
 > Arquivos scripts
 
 <hr>

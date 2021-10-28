@@ -8,6 +8,8 @@
 pthread_t id0, id1, id2, id3;
 int flag = 1;
 
+
+//Função que faz a conversão dos valores para o protocolo CAN
 void prtcl(char net[4],int ndId, char rw[5], char index[4], char subindex[2], int valor) {
 
   char  call[43]  ="";
@@ -107,6 +109,8 @@ void prtcl(char net[4],int ndId, char rw[5], char index[4], char subindex[2], in
   system(call);
 }
 
+//Função que vai será a primeira thread, para que iniciliza todos os
+//elementos antes que se inicie a tentativa de comunicação
 void * iniciate (void *apelido) {
   int i=0;
   while(flag){
@@ -118,11 +122,13 @@ void * iniciate (void *apelido) {
 	pthread_exit(NULL);
 }
 
+//Função que futuramente é para ser substituida por algo como input em alguma IHM
 void * send (void *apelido) {
 	prtcl("can0", 2, "write", "1017", "00", 0);
 	pthread_exit(NULL);
 }
 
+//Função teste para ver se o código ainda estava rodando ou travou tudo
 void * minha_thread_2(void *apelido) {
 	sleep(1);
   int i =0;
@@ -135,6 +141,7 @@ void * minha_thread_2(void *apelido) {
 	pthread_exit(NULL);
 }
 
+//Função teste para ver se o código ainda estava rodando ou travou tudo
 void * minha_thread_3(void *apelido) {
 	sleep(1);
 	while (flag) {
@@ -144,6 +151,7 @@ void * minha_thread_3(void *apelido) {
 	pthread_exit(NULL);
 }
 
+//Função principal
 int main(int argc, char *argv[]) {
 
   pthread_create(&id1, NULL , (void *) iniciate, NULL);
