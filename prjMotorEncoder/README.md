@@ -4,13 +4,12 @@
 
 <hr>
 -> IDE para seleção de inputs (rd/wr,nó,id,subid,valor);
--> Após a leitura do Log fazer a desconversão do protocolo e utilizar para algum controle 
+-> Após a leitura do Log fazer a desconversão do protocolo e utilizar para algum controle
 
 > Funções ainda não implementadas no progfinal.c
 
 <hr>
 -> Leitura do candumpLog
--> Uso dos scripts send, pois ainda só é usado no prog test prtclCvt.c
 
 > Arquivos scripts
 
@@ -21,9 +20,9 @@ master.sh -> script que cria o nó principal, junto com um arquivo que permite o
 
 nslave.sh -> script para criar um nó cujo ID = n+1, e para o barramento can0.
 
-send.sh -> script que abre um novo terminal, no qual será enviado a mensagem ao barramento.
+<del>send.sh -> script que abre um novo terminal, no qual será enviado a mensagem ao barramento.
 
-sendReal.sh -> script que faz o envio da mensagem ao barramento.
+sendReal.sh -> script que faz o envio da mensagem ao barramento.</del> (foram substituídas pela função system() )
 
 candumpLog.sh -> script que cria um arquivo .log, o qual vai ser lido para ter uma interpretação do retorno do nó.
 
