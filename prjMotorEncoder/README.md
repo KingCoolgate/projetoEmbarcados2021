@@ -6,11 +6,15 @@
 -> IDE para seleção de inputs (rd/wr,nó,id,subid,valor);
 -> Após a leitura do Log fazer a desconversão do protocolo e utilizar para algum controle
 <hr>
+
+
 > Funções ainda não implementadas no progfinal.c
 
 -> Leitura do candumpLog
 
 <hr>
+
+
 > Arquivos scripts
 
 config.sh -> script que cria o barramento virtual, além de chamar os scripts que criam os nós master e slaves, além de criar candumpLog. Ao chamar os outros scripts são criados terminais para cada um respectivamente.
@@ -28,6 +32,8 @@ candumpLog.sh -> script que cria um arquivo .log, o qual vai ser lido para ter u
 close.sh -> script que encerra todos os programas, até mesmo suspendo o PC.
 
 <hr>
+
+
 > Arquivos .c
 
 encoder.c -> Programa inicial onde foi feito o algoritimo inicial, pois a ideia era fazer 2 programas um que enviasse a mensagem de controle para o barramento, outro que recebesse o retorno do nó para ser feito o cálculo de controle. Além de ter adicionado diversos comandos aprendidos no curso, como o uso de threads, semaphore, uso dos pinos para I/O.
